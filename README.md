@@ -17,27 +17,25 @@ To use this neural network, you'll need a Python environment with NumPy installe
 
 If you don't have NumPy installed, you can install it using pip:
 
-```bash
 pip install numpy
 
 ### Usage
+
 The neural network script accepts several command line arguments for configuration:
 
 python neural_network.py -train_feat <train_features_file> -train_target <train_targets_file> -dev_feat <dev_features_file> -dev_target <dev_targets_file> -epochs <number_of_epochs> -learnrate <learning_rate> -nunits <number_of_hidden_units> -type <problem_type> -hidden_act <hidden_activation_function> -init_range <initialization_range> -num_classes <number_of_classes>
 
 Arguments:
 
--train_feat: Path to the training features file.
--train_target: Path to the training targets file.
--dev_feat: Path to the development (validation) features file.
--dev_target: Path to the development (validation) targets file.
--epochs: Number of epochs for training.
--learnrate: Learning rate for gradient descent.
--nunits: Number of units in the hidden layer.
--type: Problem type, 'C' for classification or 'R' for regression.
--hidden_act: Activation function for the hidden layer ('sig' for sigmoid, 'tanh' for hyperbolic tangent, 'relu' for rectified linear unit).
--init_range: Range for weight initialization.
--num_classes: Number of classes (for classification problems only).
+- `-train_feat`: Path to the training features file.
+- `-train_target`: Path to the training targets file.
+- `-dev_feat`: Path to the development (validation) features file.
+- `-dev_target`: Path to the development (validation) targets file.
+- `-epochs`: Number of epochs for training.
+- `-learnrate`: Learning rate for gradient descent.
+- `-nunits`: Number of units in the hidden layer.
+- `-type`: Problem type, 'C' for classification or 'R' for regression.
+- `-hidden_act`: Activation function for the hidden layer ('sig' for sigmoid, 'tanh' for hyperbolic tangent, 'relu' for rectified linear unit).
+- `-init_range`: Range for weight initialization.
+- `-num_classes`: Number of classes (for classification problems only).
 
-
-This README combines all the necessary details, including the project status, setup instructions, usage details with command line arguments, and contribution guidelines.
